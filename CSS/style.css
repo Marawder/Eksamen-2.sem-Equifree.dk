@@ -135,15 +135,15 @@ button{
 }
 .play{
    grid-column: 6;
-   border-radius: 65px 0px 0px 0px;
-   margin: 10px 3px 3px 30px;
+   grid-row: span 2;
+  
 }
 .unmute{
    grid-column: 7;
-   border-radius: 0px 65px 0px 0px;
-   margin: 10px 30px 3px 3px;
-   font-size: 4em;
+   grid-row: span 2;
+
 }
+/*
 .rewind{
    grid-column: 6;
    grid-row: 2;
@@ -156,3 +156,4 @@ button{
    border-radius: 0px 0px 65px 0px;
    margin: 3px 30px 10px 3px;
 }
+*/
