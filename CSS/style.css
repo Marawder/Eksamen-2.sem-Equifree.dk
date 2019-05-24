@@ -4,7 +4,7 @@
 }
 body{
 
-background-color: black;
+background-color: darkgray;
 
 }
 .top-bar{
@@ -86,19 +86,26 @@ margin: 4vw;
 .play{
 grid-column: 6;
 border-radius: 65px 0px 0px 0px;
+margin: 10px 3px 3px 30px;
 }
 .unmute{
 grid-column: 7;
-
 border-radius: 0px 65px 0px 0px;
+margin: 10px 30px 3px 3px;
+font-size: 4em;
 }
 .rewind{
 grid-column: 6;
 grid-row: 2;
 border-radius: 0px 0px 0px 65px;
+margin: 3px 3px 10px 30px;
 }
 .forward{
 grid-column: 7;
 grid-row: 2;
 border-radius: 0px 0px 65px 0px;
+margin: 3px 30px 10px 3px;
+}
+h2{
+    font-size: 4em;
 }
