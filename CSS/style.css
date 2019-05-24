@@ -77,17 +77,13 @@ h2{
 .dropUpContent{
     display: none;
     position: absolute;
-    background-color: #040D44; 
+    background-color: #040D44;
     min-width: 160px;
-    bottom: 27px;
     z-index: 1;
     list-style: none;
     color: #F47703;
-    right: -36px;
-}
-.dropUp{
-    position: relative;
-    display: inline-block;
+    top: -15px;
+    left: 112px;
 }
 .dropUp:hover .dropUpContent{
     display: block;
