@@ -1,13 +1,26 @@
-var button = document.querySelector(".play");
+var buttonPlay = document.querySelector(".play");
+var buttonMute = document.querySelector(".unmute");
 var background = document.querySelector(".background");
-button.addEventListener("click", function(){
+
+buttonPlay.addEventListener("click", function(){
     if (background.paused) {
         background.play();
-        button.innerHTML = "Pause";
+        buttonPlay.innerHTML = "Pause";
               }
     else {
         background.pause();
-        button.innerHTML = "Play";
+        buttonPlay.innerHTML = "Play";
           }
+    
+});
+
+buttonMute.addEventListener("click", function(){
+    if(background.muted == false){
+        background.muted = true;
+        buttonMute.innerHTML = "Unmute";
+      } else {
+        background.muted = false;
+        buttonMute.innerHTML="Mute"
+      }
     
 });
