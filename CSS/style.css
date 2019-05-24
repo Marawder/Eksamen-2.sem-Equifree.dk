@@ -1,12 +1,26 @@
+
+/* General rules */ 
 *{
     margin:0;
     padding: 0;
 }
-body{
 
-background-color: darkgray;
+
+/* body rules */ 
+body{
+    background-color: darkgray;
+}
+
+
+/* Font rules */ 
+h1 {
 
 }
+h2{
+    font-size: 4em;
+}
+
+/* Upper section nav, logo */ 
 .top-bar{
     position: fixed;
     width: 100vw;
@@ -17,33 +31,37 @@ background-color: darkgray;
     grid-template-rows: repeat(2,1fr);
 }
 .top-bar-front{
-grid-column: 2/4;
-grid-row: span 2;
-margin: 4vw;
+   grid-column: 2/4;
+   grid-row: span 2;
+   margin: 4vw;
 }
 .top-bar-normal{
-grid-column: 4/6;
-grid-row: span 2;
-margin: 4vw;
+   grid-column: 4/6;
+   grid-row: span 2;
+   margin: 4vw;
 }
 .top-bar-buepil{
-grid-column: 8/10;
-grid-row: span 2;
-margin: 4vw;
+   grid-column: 8/10;
+   grid-row: span 2;
+   margin: 4vw;
 }
 .top-bar-sammenhold{
-grid-column: 10/12;
-grid-row: span 2;
-margin: 4vw;
+   grid-column: 10/12;
+   grid-row: span 2;
+   margin: 4vw;
 }
 .top-bar-logo{
-    grid-column: 6/8;
-    grid-row: span 2;
-    background-image: url(../img/horse.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin:1vw;
+   grid-column: 6/8;
+   grid-row: span 2;
+   background-image: url(../img/horse.jpg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin:1vw;
 }
+
+
+
+/* Low section, controls, lower bar */ 
 
 .lower-bar{
     position: fixed;
@@ -110,34 +128,32 @@ button{
     border: solid #040D44;
 }
 
+
 /* Video play controls */ 
 .play, .unmute, .rewind, .forward{
     background-color: grey;
     border: 1px solid grey;
 }
 .play{
-grid-column: 6;
-border-radius: 65px 0px 0px 0px;
-margin: 10px 3px 3px 30px;
+   grid-column: 6;
+   border-radius: 65px 0px 0px 0px;
+   margin: 10px 3px 3px 30px;
 }
 .unmute{
-grid-column: 7;
-border-radius: 0px 65px 0px 0px;
-margin: 10px 30px 3px 3px;
-font-size: 4em;
+   grid-column: 7;
+   border-radius: 0px 65px 0px 0px;
+   margin: 10px 30px 3px 3px;
+   font-size: 4em;
 }
 .rewind{
-grid-column: 6;
-grid-row: 2;
-border-radius: 0px 0px 0px 65px;
-margin: 3px 3px 10px 30px;
+   grid-column: 6;
+   grid-row: 2;
+   border-radius: 0px 0px 0px 65px;
+   margin: 3px 3px 10px 30px;
 }
 .forward{
-grid-column: 7;
-grid-row: 2;
-border-radius: 0px 0px 65px 0px;
-margin: 3px 30px 10px 3px;
-}
-h2{
-    font-size: 4em;
+   grid-column: 7;
+   grid-row: 2;
+   border-radius: 0px 0px 65px 0px;
+   margin: 3px 30px 10px 3px;
 }
