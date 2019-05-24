@@ -60,37 +60,72 @@ h2{
 }
 
 
+
 /* Low section, controls, lower bar */ 
+
 .lower-bar{
     position: fixed;
     width: 100vw;
     height: 20vh;
     top: 80vh;
-  
     text-align: center; 
     display:grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2,1fr);
 }
+/*Drop up content styling*/
+.dropUpContent{
+    display: none;
+    position: absolute;
+    background-color: #040D44; 
+    min-width: 160px;
+    bottom: 27px;
+    z-index: 1;
+    list-style: none;
+    color: #F47703;
+    right: -36px;
+}
+.dropUp{
+    position: relative;
+    display: inline-block;
+}
+.dropUp:hover .dropUpContent{
+    display: block;
+}
+.dropUpContent a{
+    display: block;
+}
+.dropUpContent a:hover{
+    background-color: #F47703;
+}
+/* knapperne nede i bunden*/
 .lower-bar-stories{
     grid-column: 2/4;
     grid-row: span 2;
-    margin: 4vw;
+    margin: 3.7vw;
 }
 .lower-bar-lorum-a{
     grid-column: 4/6;
     grid-row: span 2;
-    margin: 4vw;
+    margin: 3.7vw;
 }
 .lower-bar-lorum-b{
     grid-column: 8/10;
     grid-row: span 2;
-    margin: 4vw;
+    margin: 3.7vw;
 }
 .lower-bar-lorum-c{
     grid-column: 10/12;
     grid-row: span 2;
-    margin: 4vw;
+    margin: 3.7vw;
+}
+
+
+
+button{
+    background-color: #040D44;
+    color: #F47703;
+    border: solid #040D44;
 }
 
 
