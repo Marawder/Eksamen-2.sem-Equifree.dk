@@ -10,6 +10,9 @@
 body{
     background-color: darkgray;
 }
+.background{
+width: 100%;
+}
 
 
 /* Font rules */ 
