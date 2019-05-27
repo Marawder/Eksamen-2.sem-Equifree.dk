@@ -21,6 +21,12 @@ function loadWithAjax(resource, callback) {
         console.dir(this);
         console.log("Received the following");
         console.log(this.responseText);
+        console.groupEnd();
+        // Call the callback function and send the response text along
+        callback(this.responseText);
+      }
+    };
+    xhttp.open("GET", resource, true);
     xhttp.send();
   }
   
