@@ -121,7 +121,7 @@ h2{
 /* knapper */ 
  
     .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-Galleri{
-        background-color: #040D44;
+            background-color: #040D44;
         color: #F47703;
         border: solid #040D44;
         margin: 45px 15px 45px 15px;
@@ -165,12 +165,11 @@ h2{
     top: 0; 
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: #040D44;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .modalIndhold{
     background-color: #F47703;
-    margin: 15% auto; 
+    margin: auto; 
     padding: 20px;
     border: 1px solid black;
     width: 80%;
