@@ -33,6 +33,7 @@ h2{
     display:grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2,1fr);
+    z-index: 3;
 }
 .top-bar-front{
    grid-column: 2/4;
