@@ -8,11 +8,10 @@
 
 /* body rules */ 
 body{
-
+    background-color: darkgray;
 }
 .background{
-    width: 100%;
-    height: 100%; 
+width: 100%;
 }
 
 
@@ -37,22 +36,22 @@ h2{
 .top-bar-front{
    grid-column: 2/4;
    grid-row: span 2;
-  
+   margin: 4vw;
 }
 .top-bar-normal{
    grid-column: 4/6;
    grid-row: span 2;
-  
+   margin: 4vw;
 }
 .top-bar-buepil{
    grid-column: 8/10;
    grid-row: span 2;
-  
+   margin: 4vw;
 }
 .top-bar-sammenhold{
    grid-column: 10/12;
    grid-row: span 2;
-  
+   margin: 4vw;
 }
 .top-bar-logo{
    grid-column: 6/8;
@@ -86,8 +85,8 @@ h2{
     z-index: 1;
     list-style: none;
     color: #F47703;
-    top: 0;
-    left: auto;
+    top: -15px;
+    left: 112px;
 }
 .dropUp:hover .dropUpContent{
     display: block;
@@ -102,38 +101,37 @@ h2{
 .lower-bar-stories{
     grid-column: 2/4;
     grid-row: span 2;
- 
+    margin: 3.7vw;
 }
 .lower-bar-lorum-a{
     grid-column: 4/6;
     grid-row: span 2;
- 
+    margin: 3.7vw;
 }
 .lower-bar-lorum-b{
     grid-column: 8/10;
     grid-row: span 2;
- 
+    margin: 3.7vw;
 }
 .lower-bar-lorum-c{
     grid-column: 10/12;
     grid-row: span 2;
- 
+    margin: 3.7vw;
 }
 
-/* knapper */ 
-.top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-lorum-c{
+
+
+button{
     background-color: #040D44;
     color: #F47703;
     border: solid #040D44;
-    margin: 45px 15px 45px 15px;
 }
 
 
 /* Video play controls */ 
-.play, .unmute{
+.play, .unmute, .rewind, .forward{
     background-color: grey;
     border: 1px solid grey;
-    margin: 55px 5px 55px 5px;
 }
 .play{
    grid-column: 6;
