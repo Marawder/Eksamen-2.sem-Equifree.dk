@@ -113,15 +113,18 @@ h2{
     grid-row: span 2;
     margin: 3.7vw;
 }
-.lower-bar-lorum-c{
+.lower-bar-Galleri{
     grid-column: 10/12;
     grid-row: span 2;
     margin: 3.7vw;
 }
 
+/* knapper */ 
+.top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
 
 
 button{
+
     background-color: #040D44;
     color: #F47703;
     border: solid #040D44;
