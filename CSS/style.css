@@ -114,7 +114,7 @@ h2{
     grid-row: span 2;
  
 }
-.lower-bar-lorum-c{
+.lower-bar-Galleri{
     grid-column: 10/12;
     grid-row: span 2;
  
@@ -126,12 +126,17 @@ h2{
         margin: 45px 15px 45px 15px;
     }
 
-
-
-
+/* knapper */ 
+ 
+    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-lorum-c{
+        background-color: #040D44;
+        color: #F47703;
+        border: solid #040D44;
+        margin: 45px 15px 45px 15px;
+    }
 
 /* Video play controls */ 
-.play, .unmute, {
+.play, .unmute {
     background-color: grey;
     border: 1px solid grey;
 }
