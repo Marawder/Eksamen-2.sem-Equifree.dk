@@ -12,7 +12,8 @@ body{
     height: 100%; 
 }
 .background{
-width: 100%;
+position: fixed;
+width: 100vw;
 }
 
 
@@ -101,22 +102,12 @@ h2{
 }
 /* knapperne nede i bunden*/
 .lower-bar-stories{
-    grid-column: 2/4;
-    grid-row: span 2;
- 
-}
-.lower-bar-lorum-a{
-    grid-column: 4/6;
-    grid-row: span 2;
- 
-}
-.lower-bar-lorum-b{
-    grid-column: 8/10;
+    grid-column: 3/5;
     grid-row: span 2;
  
 }
 .lower-bar-Galleri{
-    grid-column: 10/12;
+    grid-column: 9/11;
     grid-row: span 2;
  
 } 
@@ -129,7 +120,7 @@ h2{
 
 /* knapper */ 
  
-    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-lorum-c{
+    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-Galleri{
         background-color: #040D44;
         color: #F47703;
         border: solid #040D44;
