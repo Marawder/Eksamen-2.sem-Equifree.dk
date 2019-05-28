@@ -1,10 +1,8 @@
-
 /* General rules */ 
 *{
     margin:0;
     padding: 0;
 }
-
 
 /* body rules */ 
 body{
@@ -14,13 +12,10 @@ body{
 .background{
 position: fixed;
 width: 100vw;
-
 }
-
 
 /* Font rules */ 
 h1 {
-
 }
 h2{
     font-size: 4em;
@@ -35,35 +30,27 @@ h2{
     display:grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2,1fr);
-    z-index: 3;
-    
-    
+    z-index: 3;  
 }
 .top-bar-front{
    grid-column: 2/4;
    grid-row: span 2;
    font-family: 'Varela', sans-serif; 
-  
 }
 .top-bar-normal{
    grid-column: 4/6;
    grid-row: span 2;
    font-family: 'Varela', sans-serif; 
-   
-  
 }
 .top-bar-buepil{
    grid-column: 8/10;
    grid-row: span 2;
    font-family: 'Varela', sans-serif; 
-   
-  
 }
 .top-bar-sammenhold{
    grid-column: 10/12;
    grid-row: span 2;
    font-family: 'Varela', sans-serif; 
-  
 }
 .top-bar-logo{
    grid-column: 6/8;
@@ -75,10 +62,7 @@ h2{
    position: relative;
 }
 
-
-
 /* Low section, controls, lower bar */ 
-
 .lower-bar{
     position: fixed;
     width: 100vw;
@@ -90,6 +74,7 @@ h2{
     grid-template-rows: repeat(2,1fr);
     font-family: 'Varela', sans-serif; 
 }
+
 /*Drop up content styling*/
 .dropUpContent{
     display: none;
@@ -119,50 +104,46 @@ h2{
     grid-column: 3/5;
     grid-row: span 2;
     font-family: 'Varela', sans-serif; 
- 
 }
 .lower-bar-Galleri{
     grid-column: 9/11;
     grid-row: span 2;
     font-family: 'Varela', sans-serif; 
- 
 } 
-
-    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
-
-        margin: 45px 15px 45px 15px;
-        font-size: 1rem;
-        font-weight: bold;
-        border: #F47703 solid 1px; 
-        border-radius: 5px;
-        background: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
-        color: #F47703;
-    }
+.top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
+    margin: 45px 15px 45px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: #F47703 solid 1px; 
+    border-radius: 5px;
+    background: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
+    color: #F47703;
+}
     /*Hover effekt på knapperne*/
-    .top-bar-front:hover{
-        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
-    }
-    .top-bar-normal:hover{
-        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
-    }
-    .top-bar-buepil:hover{
-        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
-    }
-    .top-bar-sammenhold:hover{
-        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
-    }
-    .lower-bar-stories:hover{
-        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
-    }
-    .lower-bar-lorum-a:hover{
-        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
-    }
-    .lower-bar-lorum-b:hover{
-        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
-    }
-    .lower-bar-Galleri:hover{
-        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
-    }
+.top-bar-front:hover{
+    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+}
+.top-bar-normal:hover{
+    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+}
+.top-bar-buepil:hover{
+    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+}
+.top-bar-sammenhold:hover{
+    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+}
+.lower-bar-stories:hover{
+    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+}
+.lower-bar-lorum-a:hover{
+    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+}
+.lower-bar-lorum-b:hover{
+    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+}
+.lower-bar-Galleri:hover{
+    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+}
 
 /* Video play controls */ 
 .play, .unmute {
@@ -170,9 +151,6 @@ h2{
     border: 1px solid #040D44;
     border-radius: 5px;
     background-image: linear-gradient(to right, #F47703 0%,#d18f15 51%, #F47703 100%);
-    
-    
-
 }
 .play{
    grid-column: 6;
@@ -182,7 +160,6 @@ h2{
    font-weight: bold;
    color: #040D44;
    font-size: 1rem;
-  
 }
 .unmute{
    grid-column: 7;
@@ -192,7 +169,6 @@ h2{
    font-weight: bold;
    color: #040D44;
    font-size: 1rem;
-
 }
 
 /*
@@ -209,6 +185,7 @@ h2{
    margin: 3px 30px 10px 3px;
 }
 */
+
 /*Modal boks styling*/
 .modal{
     display: none;
@@ -240,7 +217,6 @@ h2{
     text-decoration: none;
     cursor: pointer;
 }
-
 .container {
     z-index: 3;
     display: none; /* Hidden by default */
@@ -253,10 +229,7 @@ h2{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-
-
-
+}
 .active {
     z-index: 3;
     display: block; /* Hidden by default */
@@ -269,9 +242,8 @@ h2{
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
-/*Modal billeder */
 
+/*Modal billeder */
 .modalBilleder{
     width: 20vw;
-
 }
