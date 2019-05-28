@@ -199,6 +199,7 @@ h2{
     background-color: rgba(70, 70, 70, 0.5);
 }
 .modalIndhold{
+    position: relative;
     background-color: rgba(70, 70, 70, 0.85);
     margin: 10vh auto;
     padding: 20px;
@@ -206,6 +207,9 @@ h2{
     width: 70vw;
 }
 .close{
+    position: absolute;
+    right: 5px;
+    top: 0;
     color: black;
     float: right;
     font-size: 1.2rem;
@@ -245,5 +249,57 @@ h2{
 
 /*Modal billeder */
 .modalBilleder{
-    width: 20vw;
+    width: 17vw;
 }
+
+/* img zoom */ 
+/* ---- Image Zoom ---- */
+.ModalZoom {
+    display: none;
+    position: relative;
+  /*  width: 800px; */
+    margin: auto;
+    visibility: hidden;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+}
+.ModalZoom.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0000005c;
+    padding: 30vh 0;
+    visibility: visible;
+    animation: fade 1s;
+}
+.ModalZoomImage{
+    transform: scale(1.5);
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.CloseTwo {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    border: none;
+    font-size: 4em;
+    line-height: 0.6em;
+    background-color: transparent;
+    -webkit-text-fill-color: #000;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-width: 2px;
+    cursor: pointer;
+}
+
+
+.image:hover {cursor: pointer;}
