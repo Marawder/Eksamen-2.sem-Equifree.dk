@@ -13,7 +13,7 @@ modal.style.display =  "block";
 //var close=document.querySelector(".close");
 //close.addEventListener("click", function(){
 //modal.style.display="none";
-//});
+// });
 
 
 //Window er et pre-defineret event javascript forstår, som er hvis du klikker ændre steder end modalen, lukkes den // 
