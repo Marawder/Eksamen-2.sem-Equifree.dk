@@ -15,8 +15,6 @@ width: 100vw;
 }
 
 /* Font rules */ 
-h1 {
-}
 h2{
     font-size: 4em;
 }
@@ -75,7 +73,7 @@ h2{
     font-family: 'Varela', sans-serif; 
 }
 
-/*Drop up content styling*/
+/* Drop up content styling */
 .dropUpContent{
     display: none;
     position: absolute;
@@ -99,7 +97,8 @@ h2{
 .dropUpContent a:hover{
     background-color: #F47703;
 }
-/* knapperne nede i bunden*/
+
+/* Knapperne nede i bunden */
 .lower-bar-stories{
     grid-column: 3/5;
     grid-row: span 2;
@@ -119,7 +118,7 @@ h2{
     background: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
     color: #F47703;
 }
-    /*Hover effekt på knapperne*/
+/* Hover effekt på knapperne */
 .top-bar-front:hover{
     background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
 }
@@ -186,7 +185,7 @@ h2{
 }
 */
 
-/*Modal boks styling*/
+/* Modal boks styling */
 .modal{
     display: none;
     position: fixed;
@@ -243,7 +242,7 @@ h2{
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-/*Modal billeder */
+/* Modal billeder */
 .modalBilleder{
     width: 20vw;
 }
