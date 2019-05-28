@@ -36,25 +36,33 @@ h2{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2,1fr);
     z-index: 3;
+    
+    
 }
 .top-bar-front{
    grid-column: 2/4;
    grid-row: span 2;
+   font-family: 'Varela', sans-serif; 
   
 }
 .top-bar-normal{
    grid-column: 4/6;
    grid-row: span 2;
+   font-family: 'Varela', sans-serif; 
+   
   
 }
 .top-bar-buepil{
    grid-column: 8/10;
    grid-row: span 2;
+   font-family: 'Varela', sans-serif; 
+   
   
 }
 .top-bar-sammenhold{
    grid-column: 10/12;
    grid-row: span 2;
+   font-family: 'Varela', sans-serif; 
   
 }
 .top-bar-logo{
@@ -64,6 +72,7 @@ h2{
    background-size: contain;
    background-repeat: no-repeat;
    margin:1vw;
+   position: relative;
 }
 
 
@@ -79,6 +88,7 @@ h2{
     display:grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2,1fr);
+    font-family: 'Varela', sans-serif; 
 }
 /*Drop up content styling*/
 .dropUpContent{
@@ -91,10 +101,12 @@ h2{
     color: #F47703;
     top: 0;
     left: auto;
+    font-family: 'Varela', sans-serif; 
 }
 .dropUp:hover .dropUpContent{
     display: block;
     z-index:4;
+    font-family: 'Varela', sans-serif; 
 }
 .dropUpContent a{
     display: block;
@@ -106,42 +118,54 @@ h2{
 .lower-bar-stories{
     grid-column: 3/5;
     grid-row: span 2;
+    font-family: 'Varela', sans-serif; 
  
 }
 .lower-bar-Galleri{
     grid-column: 9/11;
     grid-row: span 2;
+    font-family: 'Varela', sans-serif; 
  
 } 
-    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-lorum-c{
-        background-color: #040D44;
-        color: #F47703;
-        border: solid #040D44;
-        margin: 45px 15px 45px 15px;
-    }
+    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
 
-/* knapper */ 
- 
-    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-Galleri{
-        background-color: #040D44;
-        color: #F47703;
-        border: solid #040D44;
         margin: 45px 15px 45px 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: #F47703 solid 1px; 
+        border-radius: 5px;
+        background-image: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
+        color: #F47703;
     }
 
 /* Video play controls */ 
 .play, .unmute {
-    background-color: grey;
-    border: 1px solid grey;
+    background-color: #F47703;
+    border: 1px solid #040D44;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #F47703 0%,#ffac13 51%, #F47703 100%);
+    
+    
+
 }
 .play{
    grid-column: 6;
    grid-row: span 2;
+   margin: 45px 15px 45px 15px;
+   font-family: 'Montaga', serif;
+   font-weight: bold;
+   color: #040D44;
+   font-size: 1rem;
   
 }
 .unmute{
    grid-column: 7;
    grid-row: span 2;
+   margin: 45px 15px 45px 15px;
+   font-family: 'Montaga', serif;
+   font-weight: bold;
+   color: #040D44;
+   font-size: 1rem;
 
 }
 /*
@@ -168,14 +192,14 @@ h2{
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #040D44;
+    background-color: rgba(70, 70, 70, 0.5);
 }
 .modalIndhold{
-    background-color: #F47703;
-    margin: 15% auto; 
+    background-color: rgba(70, 70, 70, 0.85);
+    margin: 10vh auto;
     padding: 20px;
     border: 1px solid black;
-    width: 80%;
+    width: 70vw;
 }
 .close{
     color: black;
@@ -217,4 +241,10 @@ h2{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+
+/*Modal billeder */
+
+.modalBilleder{
+    width: 20vw;
+
 }
