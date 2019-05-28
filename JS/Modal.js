@@ -10,10 +10,10 @@ modal.style.display =  "block";
 
 
 //Den targeter krydset inde i galleriet som den så kan lukket med //
-var close=document.querySelector(".close");
-close.addEventListener("click", function(){
-modal.style.display="none";
-});
+//var close=document.querySelector(".close");
+//close.addEventListener("click", function(){
+//modal.style.display="none";
+//});
 
 
 //Window er et pre-defineret event javascript forstår, som er hvis du klikker ændre steder end modalen, lukkes den // 
