@@ -118,6 +118,7 @@ h2{
     background: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
     color: #F47703;
 }
+
 /* Hover effekt på knapperne */
 .top-bar-front:hover{
     background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
