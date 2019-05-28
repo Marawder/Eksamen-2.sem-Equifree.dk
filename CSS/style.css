@@ -135,13 +135,38 @@ h2{
         font-weight: bold;
         border: #F47703 solid 1px; 
         border-radius: 5px;
-        background-image: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
+        background: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
         color: #F47703;
+    }
+    /*Hover effekt på knapperne*/
+    .top-bar-front:hover{
+        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+    }
+    .top-bar-normal:hover{
+        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+    }
+    .top-bar-buepil:hover{
+        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+    }
+    .top-bar-sammenhold:hover{
+        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+    }
+    .lower-bar-stories:hover{
+        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+    }
+    .lower-bar-lorum-a:hover{
+        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+    }
+    .lower-bar-lorum-b:hover{
+        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+    }
+    .lower-bar-Galleri:hover{
+        background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
     }
 
 /* Video play controls */ 
 .play, .unmute {
-    background-color: #F47703;
+    background: #F47703;
     border: 1px solid #040D44;
     border-radius: 5px;
     background-image: linear-gradient(to right, #F47703 0%,#d18f15 51%, #F47703 100%);
