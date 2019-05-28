@@ -125,6 +125,7 @@ h2{
     font-family: 'Varela', sans-serif; 
  
 } 
+
     .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
 
         margin: 45px 15px 45px 15px;
@@ -141,7 +142,7 @@ h2{
     background-color: #F47703;
     border: 1px solid #040D44;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #F47703 0%,#ffac13 51%, #F47703 100%);
+    background-image: linear-gradient(to right, #F47703 0%,#d18f15 51%, #F47703 100%);
     
     
 
@@ -166,6 +167,7 @@ h2{
    font-size: 1rem;
 
 }
+
 /*
 .rewind{
    grid-column: 6;
