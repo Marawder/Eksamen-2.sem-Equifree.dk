@@ -14,6 +14,7 @@ body{
 .background{
 position: fixed;
 width: 100vw;
+
 }
 
 
@@ -35,25 +36,33 @@ h2{
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2,1fr);
     z-index: 3;
+    
+    
 }
 .top-bar-front{
    grid-column: 2/4;
    grid-row: span 2;
+   font-family: 'Varela', sans-serif; 
   
 }
 .top-bar-normal{
    grid-column: 4/6;
    grid-row: span 2;
+   font-family: 'Varela', sans-serif; 
+   
   
 }
 .top-bar-buepil{
    grid-column: 8/10;
    grid-row: span 2;
+   font-family: 'Varela', sans-serif; 
+   
   
 }
 .top-bar-sammenhold{
    grid-column: 10/12;
    grid-row: span 2;
+   font-family: 'Varela', sans-serif; 
   
 }
 .top-bar-logo{
@@ -63,6 +72,7 @@ h2{
    background-size: contain;
    background-repeat: no-repeat;
    margin:1vw;
+   position: relative;
 }
 
 
@@ -78,6 +88,7 @@ h2{
     display:grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(2,1fr);
+    font-family: 'Varela', sans-serif; 
 }
 /*Drop up content styling*/
 .dropUpContent{
@@ -85,14 +96,17 @@ h2{
     position: absolute;
     background-color: #040D44;
     min-width: 160px;
-    z-index: 1;
+    z-index: 4;
     list-style: none;
     color: #F47703;
     top: 0;
     left: auto;
+    font-family: 'Varela', sans-serif; 
 }
 .dropUp:hover .dropUpContent{
     display: block;
+    z-index:4;
+    font-family: 'Varela', sans-serif; 
 }
 .dropUpContent a{
     display: block;
@@ -104,44 +118,58 @@ h2{
 .lower-bar-stories{
     grid-column: 3/5;
     grid-row: span 2;
+    font-family: 'Varela', sans-serif; 
  
 }
 .lower-bar-Galleri{
     grid-column: 9/11;
     grid-row: span 2;
+    font-family: 'Varela', sans-serif; 
  
 } 
-    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-lorum-c{
-        background-color: #040D44;
-        color: #F47703;
-        border: solid #040D44;
-        margin: 45px 15px 45px 15px;
-    }
 
-/* knapper */ 
- 
-    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-Galleri{
-        background-color: #040D44;
-        color: #F47703;
-        border: solid #040D44;
+    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
+
         margin: 45px 15px 45px 15px;
+        font-size: 1rem;
+        font-weight: bold;
+        border: #F47703 solid 1px; 
+        border-radius: 5px;
+        background-image: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
+        color: #F47703;
     }
 
 /* Video play controls */ 
 .play, .unmute {
-    background-color: grey;
-    border: 1px solid grey;
+    background-color: #F47703;
+    border: 1px solid #040D44;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #F47703 0%,#d18f15 51%, #F47703 100%);
+    
+    
+
 }
 .play{
    grid-column: 6;
    grid-row: span 2;
+   margin: 45px 15px 45px 15px;
+   font-family: 'Montaga', serif;
+   font-weight: bold;
+   color: #040D44;
+   font-size: 1rem;
   
 }
 .unmute{
    grid-column: 7;
    grid-row: span 2;
+   margin: 45px 15px 45px 15px;
+   font-family: 'Montaga', serif;
+   font-weight: bold;
+   color: #040D44;
+   font-size: 1rem;
 
 }
+
 /*
 .rewind{
    grid-column: 6;
@@ -187,6 +215,34 @@ h2{
     text-decoration: none;
     cursor: pointer;
 }
+
+.container {
+    z-index: 3;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 90%;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+
+.active {
+    z-index: 3;
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 5%;
+    top: 20%;
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 
 /*Modal billeder */
 

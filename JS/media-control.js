@@ -5,11 +5,11 @@ var background = document.querySelector(".background");
 buttonPlay.addEventListener("click", function(){
     if (background.paused) {
         background.play();
-        buttonPlay.innerHTML = "Pause";
+        buttonPlay.innerHTML = "&#10074; &#10074;";
               }
     else {
         background.pause();
-        buttonPlay.innerHTML = "Play";
+        buttonPlay.innerHTML = "&#9658;";
           }
     
 });
@@ -17,10 +17,10 @@ buttonPlay.addEventListener("click", function(){
 buttonMute.addEventListener("click", function(){
     if(background.muted == false){
         background.muted = true;
-        buttonMute.innerHTML = "Unmute";
+        buttonMute.innerHTML = "&#128264;";
       } else {
         background.muted = false;
-        buttonMute.innerHTML="Mute"
+        buttonMute.innerHTML="&#128266;"
       }
     
 });
