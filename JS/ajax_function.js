@@ -39,7 +39,7 @@ function loadWithAjax(resource, callback) {
       e.preventDefault();
     // Call the ajax function to load a text file
     loadWithAjax("firstStory.html", handleHtml);
-    container.classList.toggle("active");
+    container.classList.add("openStory");
     
     });
 
@@ -47,21 +47,21 @@ function loadWithAjax(resource, callback) {
         e.preventDefault();
     // Call the ajax function to load a text file
     loadWithAjax("secondStory.html", handleHtml);
-    container.classList.toggle("active");
+    container.classList.add("openStory");
     });
 
    thirdStory.addEventListener("click", function(e) {
     e.preventDefault();
     // Call the ajax function to load a text file
     loadWithAjax("thirdStory.html", handleHtml);
-    container.classList.toggle("active");
+    container.classList.add("openStory");
     });
 
-    window.onclick = function(e) {
-        if (e.target == container) {
-          container.classList.remove("active");
+    background.addEventListener ('click', function(event) {
+        if (event.target == container) {
+          container.classList.remove("openStory");
         }
-      }
+      })
 
 function handleHtml(data) {
     console.log("Callback function was called");
