@@ -34,6 +34,7 @@ function loadWithAjax(resource, callback) {
   var secondStory = document.querySelector(".secondStory");
   var thirdStory = document.querySelector(".thirdStory");
   let container = document.querySelector(".container");
+  var x = document.querySelector(".x");
 
   firstStory.addEventListener("click", function(e) {
       e.preventDefault();
@@ -51,22 +52,30 @@ function loadWithAjax(resource, callback) {
     });
 
    thirdStory.addEventListener("click", function(e) {
-    e.preventDefault();
-    // Call the ajax function to load a text file
-    loadWithAjax("thirdStory.html", handleHtml);
-    container.classList.add("openStory");
+       e.preventDefault();
+      // Call the ajax function to load a text file
+        loadWithAjax("thirdStory.html", handleHtml);
+        container.classList.add("openStory");
     });
 
-    window.addEventListener ('click', function(event) {
-        if (event.target == container) {
+      x.addEventListener ("click", function(){
+          console.log("clicked");
           container.classList.remove("openStory");
-        }
       })
-
 function handleHtml(data) {
     console.log("Callback function was called");
     console.groupCollapsed("Html Received:");
     console.log(data);
     console.groupEnd();
     document.querySelector(".container").innerHTML = data;
+    console.log("loaded");
+
+    var x = document.querySelector(".x");
+    x.addEventListener ("click", function(){
+      console.log("clicked");
+      container.classList.remove("openStory");
+
+    
+    
+  })
 }
