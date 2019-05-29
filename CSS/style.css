@@ -8,7 +8,7 @@
 body{
     width: 100%;
     height: 100%; 
-    background-color: #00003c;
+    background-color: rgb(0, 0, 60);
 }
 .background{
 position: fixed;
@@ -78,7 +78,7 @@ h2{
 .dropUpContent{
     display: none;
     position: absolute;
-    background-color: #040D44;
+    background-color: rgb(0, 0, 60);
     min-width: 160px;
     z-index: 4;
     list-style: none;
@@ -99,7 +99,7 @@ h2{
     text-decoration: none;
     text-align: center;
     font-family: 'Varela', sans-serif; 
-    border: #F47703 solid 1px;
+    border: rgb(244, 119, 3) solid 1px;
     color: black;
     font-size: 1rem;
     padding: 5px;
@@ -123,26 +123,26 @@ h2{
     margin: 45px 15px 45px 15px;
     font-size: 1.2rem;
     font-weight: bold;
-    border: #F47703 solid 1px; 
+    border: rgb(244, 119, 3) solid 1px; 
     border-radius: 5px;
-    background: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
-    color: #F47703;
+    background: linear-gradient(to right, rgb(0, 0, 60) 0%,rgb(17, 4, 131) 51%, rgb(0, 0, 60) 100%);
+    color: rgb(244, 119, 3);
     
 }
 
 /* Hover effekt på knapperne */
 .top-bar-front:hover, .top-bar-normal:hover, .top-bar-buepil:hover, .top-bar-sammenhold:hover, .lower-bar-stories:hover, .lower-bar-lorum-a:hover, .lower-bar-lorum-b:hover, .lower-bar-Galleri:hover{
-    background: linear-gradient(to right, #13238d 0%,#110483 51%, #13238d 100%);
+    background: linear-gradient(to right, rgb(17, 4, 131) 0%,rgb(0, 0, 60) 51%, rgb(17, 4, 131) 100%);
 
 }
 
 
 /* Video play controls */ 
 .play, .unmute {
-    background: #F47703;
-    border: 1px solid #040D44;
+    background: rgb(244, 119, 3);
+    border: 1px solid rgb(0, 0, 60);
     border-radius: 5px;
-    background-image: linear-gradient(to right, #F47703 0%,#d18f15 51%, #F47703 100%);
+    background-image: linear-gradient(to right, rgb(244, 119, 3) 0%,rgb(209, 143, 21) 51%, rgb(244, 119, 3) 100%);
 }
 .play{
    grid-column: 6;
@@ -150,7 +150,7 @@ h2{
    margin: 45px 15px 45px 15px;
    font-family: 'Montaga', serif;
    font-weight: bold;
-   color: #040D44;
+   color: rgb(0, 0, 60);
    font-size: 1rem;
 }
 .unmute{
@@ -159,7 +159,7 @@ h2{
    margin: 45px 15px 45px 15px;
    font-family: 'Montaga', serif;
    font-weight: bold;
-   color: #040D44;
+   color: rgb(0, 0, 60);
    font-size: 1.2rem;
    transform: rotate(-180deg);
 }
@@ -272,7 +272,7 @@ top:45%;
     background: none;
     font-size: 2.5rem;
     cursor: pointer;
-    color: #110483;
+    color: rgb(17, 4, 131);
 }
 @keyframes fadeout {
     0%{
