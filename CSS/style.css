@@ -127,6 +127,7 @@ h2{
     border-radius: 5px;
     background: linear-gradient(to right, #040D44 0%,#110483 51%, #040D44 100%);
     color: #F47703;
+    cursor: pointer;
     
 }
 
@@ -143,6 +144,7 @@ h2{
     border: 1px solid #040D44;
     border-radius: 5px;
     background-image: linear-gradient(to right, #F47703 0%,#d18f15 51%, #F47703 100%);
+    cursor: pointer;
 }
 .play{
    grid-column: 6;
@@ -192,15 +194,6 @@ h2{
     background-color: rgba(70, 70, 70, 0.5);
     animation: fade 1s;
    
-}
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 .modalIndhold{
@@ -272,7 +265,8 @@ top:45%;
     background: none;
     font-size: 2.5rem;
     cursor: pointer;
-    color: #110483;
+    color: #F47703;
+   background-color: #040D44;
 }
 @keyframes fadeout {
     0%{
@@ -280,5 +274,14 @@ top:45%;
     }
     100%{
         opacity: 0%
+    }
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
