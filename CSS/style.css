@@ -122,12 +122,13 @@ h2{
 } 
 .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
     margin: 45px 15px 45px 15px;
-    font-size: 1.2rem;
     font-weight: bold;
     border: rgb(244, 119, 3) solid 1px; 
     border-radius: 5px;
     background: linear-gradient(to right, rgb(0, 0, 60) 0%,rgb(17, 4, 131) 51%, rgb(0, 0, 60) 100%);
     color: rgb(244, 119, 3);
+    font-size: 1.5vw; 
+    min-height: 5vh;
     
 }
 
@@ -144,6 +145,8 @@ h2{
     border: 1px solid rgb(0, 0, 60);
     border-radius: 5px;
     background-image: linear-gradient(to right, rgb(244, 119, 3) 0%,rgb(209, 143, 21) 51%, rgb(244, 119, 3) 100%);
+    font-size: 1.5vw; 
+    min-height: 5vh;
 }
 .play{
    grid-column: 6;
