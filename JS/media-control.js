@@ -21,6 +21,6 @@ buttonMute.addEventListener("click", function(){
         buttonMute.innerHTML = "🕨";
       } else {
         background.muted = false;
-        buttonMute.innerHTML="🕪";
+        buttonMute.innerHTML= "🕪";
       }
 });
