@@ -110,12 +110,13 @@ h2{
 
 /* Knapperne nede i bunden */
 .lower-bar-stories{
-    grid-column: 3/5;
+    grid-column: 9/11;
     grid-row: span 2;
     font-family: 'Varela', sans-serif; 
+    padding: 0;
 }
 .lower-bar-Galleri{
-    grid-column: 9/11;
+    grid-column: 3/5;
     grid-row: span 2;
     font-family: 'Varela', sans-serif; 
 } 
@@ -297,12 +298,12 @@ top:45%;
     }
 }
 
+/*Stories content*/
 .overskrift {
     font-family: 'Montaga', serif;
     font-size: 1.2rem;
     padding-top: 1vh;
 }
-
 .stories {
     padding-top: 1vh;
     font-family: 'Varela', sans-serif;
