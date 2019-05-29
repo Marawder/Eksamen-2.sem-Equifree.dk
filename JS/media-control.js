@@ -18,9 +18,9 @@ buttonPlay.addEventListener("click", function(){
 buttonMute.addEventListener("click", function(){
     if(background.muted == false){
         background.muted = true;
-        buttonMute.innerHTML = "&#128264;";
+        buttonMute.innerHTML = "🕨";
       } else {
         background.muted = false;
-        buttonMute.innerHTML="&#128266;"
+        buttonMute.innerHTML="🕪";
       }
 });
