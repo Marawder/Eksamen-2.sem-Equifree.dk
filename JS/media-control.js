@@ -6,7 +6,7 @@ var background = document.querySelector(".background");
 buttonPlay.addEventListener("click", function(){
     if (background.paused) {
         background.play();
-        buttonPlay.innerHTML = "&#10074; &#10074;";
+        buttonPlay.innerHTML = "&#10074;&#10074;";
               }
     else {
         background.pause();
@@ -18,9 +18,9 @@ buttonPlay.addEventListener("click", function(){
 buttonMute.addEventListener("click", function(){
     if(background.muted == false){
         background.muted = true;
-        buttonMute.innerHTML = "&#128264;";
+        buttonMute.innerHTML = "🕨";
       } else {
         background.muted = false;
-        buttonMute.innerHTML="&#128266;"
+        buttonMute.innerHTML="🕪";
       }
 });
