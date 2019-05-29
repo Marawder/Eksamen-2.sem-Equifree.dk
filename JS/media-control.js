@@ -6,7 +6,7 @@ var background = document.querySelector(".background");
 buttonPlay.addEventListener("click", function(){
     if (background.paused) {
         background.play();
-        buttonPlay.innerHTML = "&#10074; &#10074;";
+        buttonPlay.innerHTML = "&#10074;&#10074;";
               }
     else {
         background.pause();
