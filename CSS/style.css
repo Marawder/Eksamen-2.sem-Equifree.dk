@@ -93,7 +93,6 @@ h2{
 .dropUp:hover .dropUpContent{
     display: block;
     z-index:4; 
-  
 }
 .dropUpContent a{
     display: block;
@@ -123,6 +122,7 @@ h2{
     grid-row: span 2;
     font-family: 'Varela', sans-serif; 
 } 
+
 /* general styling for alle knapper på landingpage */ 
 .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
     margin: 45px 15px 45px 15px;
@@ -133,13 +133,11 @@ h2{
     color: rgb(244, 119, 3);
     font-size: 1.5vw; 
     min-height: 5vh;
-    
 }
 
 /* Hover effekt på knapperne */
 .top-bar-front:hover, .top-bar-normal:hover, .top-bar-buepil:hover, .top-bar-sammenhold:hover, .lower-bar-stories:hover, .lower-bar-lorum-a:hover, .lower-bar-lorum-b:hover, .lower-bar-Galleri:hover{
     background: linear-gradient(to right, rgb(17, 4, 131) 0%,rgb(0, 0, 60) 51%, rgb(17, 4, 131) 100%);
-
 }
 
 
@@ -153,6 +151,7 @@ h2{
     min-height: 5vh;
     grid-row: 2;
 }
+
 /* lower-bar, play, unmute, knapper */
 .play{
    grid-column: 6;
@@ -172,8 +171,6 @@ h2{
    transform: rotate(-180deg);
 }
 
-
-
 /* Modal boks styling */
 .modal{
     display: none;
@@ -186,7 +183,7 @@ h2{
     overflow: auto;
     background-color: rgba(70, 70, 70, 0.5);
     animation: fade 1s;
-   }
+}
 .modalIndhold{
     position: relative;
     background-color: rgba(70, 70, 70, 0.85);
@@ -194,7 +191,8 @@ h2{
    /* padding: 20px;
     border: 1px solid black; */ 
     max-width: 39vw;
-}   
+}  
+
 @keyframes fade {
     0% {
         opacity: 0;
@@ -204,7 +202,6 @@ h2{
         opacity: 1;
     }
 }
-
 
 .close{
     position: absolute;
@@ -235,7 +232,6 @@ h2{
     background-color: rgba(255, 255, 255, 0.4); /* Black w/ opacity */
     animation: fade 0.6s;
 }
-
 .openStory {
     z-index: 3;
     display: block; /* Hidden by default */
@@ -248,7 +244,6 @@ h2{
     overflow: auto;
     background-color: rgba(244, 119, 3, 0.5);
     border-radius: 5px;
-    
 }
 
 /* ----- slider ----- */
@@ -260,23 +255,32 @@ h2{
 .slide.active {
    display: block;
    animation: fade 1s;
-  
 }
 .display-left{
 position: absolute;
 left:0;
-top: 45%;
+padding-right: 5%;
+padding-left: 1%;
 }
 .display-right{
 position: absolute;
 right: 0;
-top:45%;
+padding-right: 1%;
+padding-left: 5%;
 }
 .display-left, .display-right{
     border: none;
     background: none;
     font-size: 2.5rem;
     cursor: pointer;
+    color: rgb(17, 4, 131);
+    top: 0%;
+    height: 100%;
+    transition: all .4s ease-in-out;
+}
+button:focus {outline:0;}
+.display-left:hover, .display-right:hover{
+    background: rgba(0, 0, 0, 0.5);
     color: rgb(17, 4, 131);
 }
 @keyframes fadeout {
@@ -300,7 +304,6 @@ top:45%;
     font-family: 'Varela', sans-serif;
 
 }
-
 .x{
     cursor: pointer;
     font-size: 1.2rem;
@@ -308,7 +311,6 @@ top:45%;
     text-align: right;
     padding-right:1vw;
 }
-
 
 /* media queries */ 
 /* REST OF CSS IS MEDIA QUERIES */
@@ -328,46 +330,39 @@ top:45%;
         background: linear-gradient(to right, rgb(0, 0, 60) 0%,rgb(17, 4, 131) 51%, rgb(0, 0, 60) 100%);
         color: rgb(244, 119, 3);
         font-size: 1.5vw; 
-        min-height: 3vh;
-        
-        
+        min-height: 3vh; 
     }
-
     .top-bar-front{
         grid-column: 3/5;
         grid-row: 2;
         font-family: 'Varela', sans-serif; 
         margin: 7vh 2vw 6vh 2vw;
-     }
+    }
      .top-bar-normal{
         grid-column: 5/7;
         grid-row: 2;
         font-family: 'Varela', sans-serif; 
         margin: 7vh 2vw 6vh 2vw;
         
-     }
+    }
      .top-bar-buepil{
         grid-column: 7/9;
         grid-row: 2;
         font-family: 'Varela', sans-serif; 
         margin: 7vh 2vw 6vh 2vw;
-     }
+    }
      .top-bar-sammenhold{
         grid-column: 9/11;
         grid-row: 2;
         font-family: 'Varela', sans-serif; 
         margin: 7vh 2vw 6vh 2vw;
-     }
-
+    }
      .top-bar-logo {
         grid-column: 4/7;
         grid-row: 1;
         padding-top: 5vh;
         width: 50vw;
-
-        
-     }
-
+    }
      .play, .unmute {
         background: rgb(244, 119, 3);
         border: 1px solid rgb(0, 0, 60);
@@ -378,7 +373,6 @@ top:45%;
         width: 15vw;
         grid-row: 1;
     }
-
     .lower-bar-stories{
         grid-column: 9/12;
         grid-row: 1;
@@ -397,7 +391,6 @@ top:45%;
         height: 5vh;
         margin: auto;
     } 
-
     .dropUpContent{
         display: none;
         position: absolute; /* denne absolute holder sig absolute i forhold til knappens relativ, og dens Bottom 100% gør den går op af i stedet for ned af */ 
@@ -410,10 +403,7 @@ top:45%;
         font-family: 'Varela', sans-serif; 
         color: black;
         border-radius: 8px;
-        
-       
     }
-
     .openStory {
         z-index: 3;
         display: block; /* Hidden by default */
@@ -426,11 +416,8 @@ top:45%;
         overflow: auto;
         background-color: rgba(244, 119, 3, 0.5);
         border-radius: 5px;
-        
-        
     }
-
-  }
+}
 
   /* media queries for ipad and ipad pro*/
   @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -438,7 +425,6 @@ top:45%;
       margin-top: 50%;
       width: 100%;
     }
-
     .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
         margin: 45px 15px 45px 15px;
         font-weight: bold;
@@ -448,46 +434,38 @@ top:45%;
         color: rgb(244, 119, 3);
         font-size: 1.5vw; 
         min-height: 3vh;
-        
-        
     }
-
     .top-bar-front{
         grid-column: 3/5;
         grid-row: 2;
         font-family: 'Varela', sans-serif; 
         margin: 7vh 2vw 6vh 2vw;
-     }
-     .top-bar-normal{
+    }
+    .top-bar-normal{
         grid-column: 5/7;
         grid-row: 2;
         font-family: 'Varela', sans-serif; 
         margin: 7vh 2vw 6vh 2vw;
-        
-     }
-     .top-bar-buepil{
+    }
+    .top-bar-buepil{
         grid-column: 7/9;
         grid-row: 2;
         font-family: 'Varela', sans-serif; 
         margin: 7vh 2vw 6vh 2vw;
-     }
-     .top-bar-sammenhold{
+    }
+    .top-bar-sammenhold{
         grid-column: 9/11;
         grid-row: 2;
         font-family: 'Varela', sans-serif; 
         margin: 7vh 2vw 6vh 2vw;
-     }
-
-     .top-bar-logo {
+    }
+    .top-bar-logo {
         grid-column: 4/7;
         grid-row: 1;
         padding-top: 5vh;
         width: 50vw;
-
-        
-     }
-
-     .play, .unmute {
+    }
+    .play, .unmute {
         background: rgb(244, 119, 3);
         border: 1px solid rgb(0, 0, 60);
         border-radius: 5px;
@@ -497,7 +475,6 @@ top:45%;
         width: 15vw;
         grid-row: 1;
     }
-
     .lower-bar-stories{
         grid-column: 9/12;
         grid-row: 1;
@@ -516,7 +493,6 @@ top:45%;
         height: 5vh;
         margin: auto;
     } 
-
     .openStory {
         z-index: 3;
         display: block; /* Hidden by default */
@@ -528,12 +504,9 @@ top:45%;
         height: 30%; 
         overflow: auto;
         background-color: rgba(244, 119, 3, 0.5);
-        border-radius: 5px;
-        
-        
+        border-radius: 5px; 
     }
-
-  }
+}
 
   /* media queries for ipad landscape view */ 
   @media screen and (min-height: 768px) and (max-height: 768px) {
@@ -554,29 +527,28 @@ top:45%;
             min-height: 5vh;
             
         }
-
         .top-bar-front{
             grid-column: 2/4;
             grid-row: 1/3;
             font-family: 'Varela', sans-serif; 
             
-         }
-         .top-bar-normal{
+        }
+        .top-bar-normal{
             grid-column: 4/6;
             grid-row: 1/3;
             font-family: 'Varela', sans-serif; 
-         }
-         .top-bar-buepil {
+        }
+        .top-bar-buepil {
             grid-column: 8/10;
             grid-row: 1/3;
             font-family: 'Varela', sans-serif; 
-         }
-         .top-bar-sammenhold {
+        }
+        .top-bar-sammenhold {
             grid-column: 10/12;
             grid-row: 1/3;
             font-family: 'Varela', sans-serif; 
-         }
-         .top-bar-logo{
+        }
+        .top-bar-logo{
             grid-column: 6/8;
             grid-row: span 2;
             position: relative;
@@ -584,9 +556,8 @@ top:45%;
             margin:auto;
             border-radius: 5%;
             padding: 0;
-         }
-
-         .play, .unmute {
+        }
+        .play, .unmute {
             background: rgb(244, 119, 3);
             border: 1px solid rgb(0, 0, 60);
             border-radius: 5px;
@@ -594,10 +565,7 @@ top:45%;
             font-size: 1.5vw; 
             min-height: 5vh;
             grid-row: 1;
-            
-
         }
-
         .openStory {
             z-index: 3;
             display: block; /* Hidden by default */
@@ -610,9 +578,7 @@ top:45%;
             overflow: auto;
             background-color: rgba(244, 119, 3, 0.5);
             border-radius: 5px;
-            
         }
-
         .lower-bar-stories{
             grid-column: 9/12;
             grid-row: 1;
@@ -627,7 +593,6 @@ top:45%;
             font-family: 'Varela', sans-serif; 
             margin: auto;
         } 
-
         .dropUpContent{
             display: none;
             position: absolute; /* denne absolute holder sig absolute i forhold til knappens relativ, og dens Bottom 100% gør den går op af i stedet for ned af */ 
@@ -640,8 +605,5 @@ top:45%;
             font-family: 'Varela', sans-serif; 
             color: black;
             border-radius: 8px;
-            
         }        
-            
   }
-
