@@ -325,3 +325,63 @@ top:45%;
     text-align: right;
     padding-right:0.5vw;
 }
+
+/* media queries */ 
+
+/* media queries for phone */
+@media screen and (max-width: 600px) {
+    .background {
+      padding-top: 40%;
+    }
+
+    .top-bar-front, .top-bar-normal, .top-bar-buepil, .top-bar-sammenhold, .lower-bar-stories, .lower-bar-lorum-a, .lower-bar-lorum-b, .lower-bar-Galleri{
+        margin: 45px 15px 45px 15px;
+        font-weight: bold;
+        border: rgb(244, 119, 3) solid 1px; 
+        border-radius: 5px;
+        background: linear-gradient(to right, rgb(0, 0, 60) 0%,rgb(17, 4, 131) 51%, rgb(0, 0, 60) 100%);
+        color: rgb(244, 119, 3);
+        font-size: 1.5vw; 
+        min-height: 3vh;
+        width: vw;
+        
+    }
+
+    .top-bar-front{
+        grid-column: 2/4;
+        grid-row: 3;
+        font-family: 'Varela', sans-serif; 
+        margin: 8vh 1vw 8vh 1vw;
+     }
+     .top-bar-normal{
+        grid-column: 4/6;
+        grid-row: 3;
+        font-family: 'Varela', sans-serif; 
+        margin: 8vh 1vw 8vh 1vw;
+        
+     }
+     .top-bar-buepil{
+        grid-column: 8/10;
+        grid-row: 3;
+        font-family: 'Varela', sans-serif; 
+        margin: 8vh 1vw 8vh 1vw;
+     }
+     .top-bar-sammenhold{
+        grid-column: 10/12;
+        grid-row: 3;
+        font-family: 'Varela', sans-serif; 
+        margin: 8vh 1vw 8vh 1vw;
+     }
+
+     .top-bar-logo {
+        grid-column: 5/9;
+        grid-row: 2;
+        height: 10vh;
+        background-image: url(../img/horse.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin:1vw;
+        position: relative;
+     }
+
+  }
